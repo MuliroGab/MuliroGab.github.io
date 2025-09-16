@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Desenvolvedor Full Stack</title>
-    <meta name="description" content="Portfólio profissional apresentando projetos de desenvolvimento full-stack, habilidades técnicas e jornada de programação. Destacando React, Node.js e tecnologias web modernas.">
+    <meta name="description"
+        content="Portfólio profissional apresentando projetos de desenvolvimento full-stack, habilidades técnicas e jornada de programação. Destacando React, Node.js e tecnologias web modernas.">
     <meta property="og:title" content="Portfólio - Desenvolvedor Full Stack">
-    <meta property="og:description" content="Portfólio profissional apresentando projetos de desenvolvimento full-stack e experiência técnica">
+    <meta property="og:description"
+        content="Portfólio profissional apresentando projetos de desenvolvimento full-stack e experiência técnica">
     <meta property="og:type" content="website">
-    
+
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
+
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <!-- Header Navigation -->
     <header class="header">
@@ -34,11 +40,13 @@
                 <a href="#contact" class="nav-link" data-testid="link-contact">Contato</a>
             </div>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" data-testid="button-theme-toggle" aria-label="Alternar tema">
+                <button class="theme-toggle" id="theme-toggle" data-testid="button-theme-toggle"
+                    aria-label="Alternar tema">
                     <i data-lucide="sun" class="theme-icon-light"></i>
                     <i data-lucide="moon" class="theme-icon-dark"></i>
                 </button>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" data-testid="button-mobile-menu" aria-label="Menu">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" data-testid="button-mobile-menu"
+                    aria-label="Menu">
                     <i data-lucide="menu"></i>
                 </button>
             </div>
@@ -50,54 +58,36 @@
         <div class="container">
             <!-- Profile Image -->
             <div class="hero-image">
-                <img 
-                    src="Professional_developer_headshot_avatar_784c9e41.png" 
-                    alt="Professional headshot" 
-                    class="avatar"
-                    data-testid="img-profile"
-                >
+                <img src="murillo.jpeg" alt="Imagem não encontrada!"
+                    class="avatar" data-testid="img-profile">
                 <div class="avatar-overlay"></div>
             </div>
-
             <!-- Introduction -->
             <div class="hero-content">
                 <h1 class="hero-title" data-testid="text-name">Murillo Gabriel Silva</h1>
                 <h2 class="hero-subtitle" data-testid="text-title">Desenvolvedor Full Stack</h2>
                 <p class="hero-description" data-testid="text-intro">
-                    Apaixonado por criar soluções elegantes para problemas complexos. 
-                    Desenvolvo aplicações web modernas que oferecem experiências excepcionais 
+                    Desenvolvo aplicações web que oferecem experiências excepcionais
                     aos usuários com código limpo e de fácil manutenção.
                 </p>
             </div>
 
-            <!-- Technologies -->
-            <div class="hero-technologies">
-                <p class="tech-label">Especialização em</p>
-                <div class="tech-badges">
-                    <span class="badge" data-testid="badge-tech-react">React</span>
-                    <span class="badge" data-testid="badge-tech-node.js">Node.js</span>
-                    <span class="badge" data-testid="badge-tech-typescript">TypeScript</span>
-                    <span class="badge" data-testid="badge-tech-python">Python</span>
-                </div>
-            </div>
-
             <!-- Contact Links -->
             <div class="hero-actions">
-                <button class="btn btn-primary" onclick="handleContactClick('email')" data-testid="button-contact-email">
+                <button class="btn btn-primary" onclick="handleContactClick('email')"
+                    data-testid="button-contact-email">
                     <i data-lucide="mail"></i>
                     Entre em Contato
                 </button>
-                <button class="btn btn-outline" onclick="handleContactClick('linkedin')" data-testid="button-contact-linkedin">
+                <button class="btn btn-outline" onclick="handleContactClick('linkedin')"
+                    data-testid="button-contact-linkedin">
                     <i data-lucide="linkedin"></i>
                     LinkedIn
                 </button>
-                <button class="btn btn-outline" onclick="handleContactClick('github')" data-testid="button-contact-github">
+                <button class="btn btn-outline" onclick="handleContactClick('github')"
+                    data-testid="button-contact-github">
                     <i data-lucide="github"></i>
                     GitHub
-                </button>
-                <button class="btn btn-outline" onclick="handleContactClick('resume')" data-testid="button-download-resume">
-                    <i data-lucide="download"></i>
-                    Currículo
                 </button>
             </div>
         </div>
@@ -118,17 +108,19 @@
                     <div class="about-story">
                         <h3>Minha Jornada</h3>
                         <p data-testid="text-journey">
-                            Minha paixão pela programação começou na faculdade, onde descobri o poder de transformar ideias em realidade através do código. 
-                            Desde então, venho me dedicando a aprender e dominar tecnologias que me permitem criar soluções inovadoras e impactantes.
+                            Minha paixão pela programação começou na faculdade, onde descobri o poder de transformar
+                            ideias em realidade através do código.
+                            Desde então, venho me dedicando a aprender e dominar tecnologias que me permitem criar
+                            soluções inovadoras e impactantes.
                         </p>
                     </div>
 
                     <div class="about-philosophy">
                         <h3>Filosofia de Desenvolvimento</h3>
                         <p data-testid="text-philosophy">
-                            Acredito que o melhor código é aquele que é simples, elegante e fácil de manter. 
-                            Meu foco está em criar aplicações que não apenas funcionem bem, mas que também proporcionem 
-                            uma experiência excepcional aos usuários finais.
+                            Acredito que o melhor código é aquele que é simples, elegante e fácil de manter.
+                            Meu foco está em criar aplicações que não apenas funcionem bem, mas que também proporcionem
+                            uma boa experiência aos usuários finais.
                         </p>
                     </div>
 
@@ -142,21 +134,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="about-stats">
-                    <div class="stat-card" data-testid="card-stat-experience">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Anos de Experiência</div>
-                    </div>
-                    <div class="stat-card" data-testid="card-stat-projects">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projetos Completados</div>
-                    </div>
-                    <div class="stat-card" data-testid="card-stat-technologies">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Tecnologias Dominadas</div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -167,175 +144,107 @@
             <div class="section-header">
                 <h2 class="section-title" data-testid="text-projects-title">Projetos em Destaque</h2>
                 <p class="section-description" data-testid="text-projects-subtitle">
-                    Uma seleção cuidadosa dos meus trabalhos mais recentes e impactantes.
+                    Uma seleção dos meus trabalhos mais recentes.
                 </p>
             </div>
 
             <div class="projects-grid">
-                <!-- E-Commerce Platform -->
-                <article class="project-card" data-testid="card-project-ecommerce">
+                <!-- Biblioteca de RPG -->
+                <article class="project-card" data-testid="card-project-dragon">
                     <div class="project-header">
-                        <h3 class="project-title">Plataforma E-Commerce</h3>
+                        <h3 class="project-title">Biblioteca de RPG</h3>
                         <span class="project-status">Completado</span>
                     </div>
                     <p class="project-description">
-                        Plataforma completa de e-commerce com sistema de pagamentos, gerenciamento de produtos, 
-                        carrinho de compras e painel administrativo. Inclui autenticação, processamento de pedidos e analytics.
+                        Plataforma construida com o objetivo de armazenar e disponibilizar livros de rpgs, separados por
+                        categorias como
+                        Aventuras Solo, Aventuras em Grupo, Aventuras educacionais e etc. Além de um estante de livros
+                        pessoal para o usuário guardar suas
+                        próprias histórias.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/alexsilva/ecommerce-platform" class="btn btn-outline btn-small" data-testid="link-github-ecommerce">
+                        <a href="https://github.com/MuliroGab/Front-End-Libraries-Dragons"
+                            class="btn btn-outline btn-small" data-testid="link-github-dragon">
                             <i data-lucide="github"></i>
                             Código
-                        </a>
-                        <a href="#" class="btn btn-primary btn-small" data-testid="link-demo-ecommerce">
-                            <i data-lucide="external-link"></i>
-                            Demo
                         </a>
                     </div>
                 </article>
 
-                <!-- Task Management App -->
-                <article class="project-card" data-testid="card-project-taskmanager">
+                <!-- React Native Calculator App -->
+                <article class="project-card" data-testid="card-project-calculator">
                     <div class="project-header">
-                        <h3 class="project-title">App de Gestão de Tarefas</h3>
+                        <h3 class="project-title">React Native Calculator App</h3>
                         <span class="project-status">Completado</span>
                     </div>
                     <p class="project-description">
-                        Aplicativo colaborativo de gestão de tarefas com recursos avançados como boards Kanban, 
-                        atribuição de tarefas, notificações em tempo real e relatórios de produtividade.
+                        Este é um simples aplicativo de calculadora desenvolvido em React Native. Permite opereações básicas como
+                        adição, subtração, multiplicação e divisão, Cálculo de porcentagens e Uso de parênteses para operações.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/alexsilva/task-manager" class="btn btn-outline btn-small" data-testid="link-github-taskmanager">
+                        <a href="https://github.com/MuliroGab/Calculator-App" class="btn btn-outline btn-small"
+                            data-testid="link-github-calculator">
                             <i data-lucide="github"></i>
                             Código
-                        </a>
-                        <a href="#" class="btn btn-primary btn-small" data-testid="link-demo-taskmanager">
-                            <i data-lucide="external-link"></i>
-                            Demo
                         </a>
                     </div>
                 </article>
 
                 <!-- Weather Analytics Dashboard -->
-                <article class="project-card" data-testid="card-project-weather">
+                <article class="project-card" data-testid="card-project-safe">
                     <div class="project-header">
-                        <h3 class="project-title">Dashboard de Análise do Tempo</h3>
+                        <h3 class="project-title">Aplicativo Para Tranca Eletrônica</h3>
                         <span class="project-status">Completado</span>
                     </div>
                     <p class="project-description">
-                        Dashboard interativo para visualização de dados meteorológicos com gráficos dinâmicos, 
-                        previsões estendidas, mapas interativos e histórico de tendências climáticas.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/alexsilva/weather-dashboard" class="btn btn-outline btn-small" data-testid="link-github-weather">
-                            <i data-lucide="github"></i>
-                            Código
-                        </a>
-                        <a href="#" class="btn btn-primary btn-small" data-testid="link-demo-weather">
-                            <i data-lucide="external-link"></i>
-                            Demo
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Real Estate Portal -->
-                <article class="project-card" data-testid="card-project-realestate">
-                    <div class="project-header">
-                        <h3 class="project-title">Portal Imobiliário</h3>
-                        <span class="project-status">Em Desenvolvimento</span>
-                    </div>
-                    <p class="project-description">
-                        Portal completo para compra e venda de imóveis com busca avançada, tours virtuais, 
-                        sistema de avaliação automática e integração com APIs de geolocalização.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Prisma</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">AWS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/alexsilva/real-estate-portal" class="btn btn-outline btn-small" data-testid="link-github-realestate">
-                            <i data-lucide="github"></i>
-                            Código
-                        </a>
-                        <span class="btn btn-disabled btn-small">
-                            <i data-lucide="clock"></i>
-                            Em breve
-                        </span>
-                    </div>
-                </article>
-
-                <!-- Fitness Tracker -->
-                <article class="project-card" data-testid="card-project-fitness">
-                    <div class="project-header">
-                        <h3 class="project-title">App de Fitness</h3>
-                        <span class="project-status">Completado</span>
-                    </div>
-                    <p class="project-description">
-                        Aplicativo móvel para acompanhamento de exercícios e nutrição com recursos sociais, 
-                        desafios entre amigos, integração com wearables e planos de treino personalizados.
+                        Desenvolvida para se conectar ao sistema 
+                        para realizar as funcionalidades de tranca e destranca das portas, log de atividade e gerador de QR Code, 
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">HealthKit</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Jest</span>
+                        <span class="tech-tag">TypeScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/alexsilva/fitness-tracker" class="btn btn-outline btn-small" data-testid="link-github-fitness">
+                        <a href="https://github.com/MuliroGab/Safe-Door" class="btn btn-outline btn-small"
+                            data-testid="link-github-safe">
                             <i data-lucide="github"></i>
                             Código
-                        </a>
-                        <a href="#" class="btn btn-primary btn-small" data-testid="link-demo-fitness">
-                            <i data-lucide="external-link"></i>
-                            Demo
                         </a>
                     </div>
                 </article>
 
-                <!-- Learning Platform -->
-                <article class="project-card" data-testid="card-project-learning">
+                <!-- WorkSafety -->
+                <article class="project-card" data-testid="card-project-realestate">
                     <div class="project-header">
-                        <h3 class="project-title">Plataforma de Ensino Online</h3>
-                        <span class="project-status">Completado</span>
+                        <h3 class="project-title">Work Safety- Sistema de Gestão de Segurança no Trabalho</h3>
+                        <span class="project-status">Em Desenvolvimento</span>
                     </div>
                     <p class="project-description">
-                        Plataforma educacional com cursos interativos, quizzes, certificados, 
-                        sistema de progresso gamificado e videoaulas com player customizado.
+                        Este é um sistema abrangente de gestão de segurança no trabalho, construído com uma arquitetura moderna full-stack. O aplicativo oferece ferramentas para treinamentos de 
+                        segurança, avaliações de risco, gerenciamento de documentos, relatórios de incidentes e resposta a emergências.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">React</span>
                         <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">FFmpeg</span>
+                        <span class="tech-tag">TypeScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/alexsilva/learning-platform" class="btn btn-outline btn-small" data-testid="link-github-learning">
+                        <a href="https://github.com/MuliroGab/WorkSafety" class="btn btn-outline btn-small"
+                            data-testid="link-github-work">
                             <i data-lucide="github"></i>
                             Código
-                        </a>
-                        <a href="#" class="btn btn-primary btn-small" data-testid="link-demo-learning">
-                            <i data-lucide="external-link"></i>
-                            Demo
                         </a>
                     </div>
                 </article>
@@ -370,27 +279,15 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">React</span>
-                            <span class="skill-level specialist">Especialista</span>
+                            <span class="skill-level advanced">Avançado</span>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Vue.js</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Angular</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Svelte</span>
                             <span class="skill-level intermediate">Intermediário</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Next.js</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
                             <span class="skill-name">TypeScript</span>
-                            <span class="skill-level specialist">Especialista</span>
+                            <span class="skill-level advanced">Avançado</span>
                         </div>
                     </div>
                 </div>
@@ -411,22 +308,14 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">Node.js</span>
-                            <span class="skill-level specialist">Especialista</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
                             <span class="skill-level advanced">Avançado</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Go</span>
+                            <span class="skill-name">Python</span>
                             <span class="skill-level intermediate">Intermediário</span>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Java</span>
-                            <span class="skill-level intermediate">Intermediário</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Rust</span>
                             <span class="skill-level beginner">Iniciante</span>
                         </div>
                     </div>
@@ -448,31 +337,15 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">PostgreSQL</span>
-                            <span class="skill-level specialist">Especialista</span>
+                            <span class="skill-level intermediate">Intermediário</span>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">MongoDB</span>
                             <span class="skill-level advanced">Avançado</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Redis</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
                             <span class="skill-name">MySQL</span>
-                            <span class="skill-level intermediate">Intermediário</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Elasticsearch</span>
                             <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">GraphQL</span>
-                            <span class="skill-level intermediate">Intermediário</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Prisma</span>
-                            <span class="skill-level intermediate">Intermediário</span>
                         </div>
                     </div>
                 </div>
@@ -493,63 +366,6 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">React Native</span>
-                            <span class="skill-level intermediate">Intermediário</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Flutter</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Swift</span>
-                            <span class="skill-level beginner">Iniciante</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Kotlin</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Xamarin</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Ionic</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DevOps & Cloud -->
-                <div class="skill-category" data-testid="card-skill-devops">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i data-lucide="cloud"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h3 class="skill-title">DevOps e Cloud</h3>
-                            <p class="skill-description">
-                                Implementação de práticas DevOps e infraestrutura em nuvem
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Docker</span>
-                            <span class="skill-level specialist">Especialista</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">AWS</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Kubernetes</span>
-                            <span class="skill-level specialist">Especialista</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CI/CD</span>
-                            <span class="skill-level intermediate">Intermediário</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Terraform</span>
                             <span class="skill-level advanced">Avançado</span>
                         </div>
                     </div>
@@ -571,23 +387,11 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">Jest</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Cypress</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Testing Library</span>
                             <span class="skill-level intermediate">Intermediário</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Playwright</span>
-                            <span class="skill-level advanced">Avançado</span>
-                        </div>
-                        <div class="skill-item">
                             <span class="skill-name">Unit Testing</span>
-                            <span class="skill-level specialist">Especialista</span>
+                            <span class="skill-level intermediate">Intermediário</span>
                         </div>
                     </div>
                 </div>
@@ -604,6 +408,49 @@
                     Pronto para discutir seu próximo projeto ou apenas quer dizer olá? Adoraria ouvir de você.
                 </p>
             </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Enviar uma Mensagem</h3>
+                        </div>
+                        <div class="card-content">
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Nome</label>
+                                        <input type="text" id="name" name="name" placeholder="Seu nome completo"
+                                            data-testid="input-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"
+                                            data-testid="input-email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Sobre o que é isso?"
+                                        data-testid="input-subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea id="message" name="message" rows="4"
+                                        placeholder="Me conte sobre seu projeto ou apenas diga olá..."
+                                        data-testid="textarea-message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-testid="button-submit">
+                                    <i data-lucide="mail"></i>
+                                    <span class="btn-text">Enviar Mensagem</span>
+                                    <span class="btn-loading" style="display: none;">Enviando...</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Contact Info -->
                 <div class="contact-info">
                     <!-- Contact Information -->
@@ -618,7 +465,8 @@
                                 </div>
                                 <div class="contact-details">
                                     <span class="contact-label">Email</span>
-                                    <a href="mailto:alex.silva@example.com" class="contact-value">alex.silva@example.com</a>
+                                    <a href="mailto:murillogabrielevil@hotmail.com"
+                                        class="contact-value">murillogabrielevil@hotmail.com</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -627,7 +475,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <span class="contact-label">Telefone</span>
-                                    <a href="tel:+5511999999999" class="contact-value">+55 (11) 99999-9999</a>
+                                    <a href="tel:+5511999999999" class="contact-value">+55 (84) 99631-1567</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -636,7 +484,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <span class="contact-label">Localização</span>
-                                    <span class="contact-value">São Paulo, SP</span>
+                                    <span class="contact-value">Florânia, RN</span>
                                 </div>
                             </div>
                         </div>
@@ -649,15 +497,18 @@
                         </div>
                         <div class="card-content">
                             <div class="social-links">
-                                <a href="https://linkedin.com/in/alexsilva" class="social-link" data-testid="link-social-linkedin">
+                                <a href="https://br.linkedin.com/in/murillo-silva-522873276" class="social-link"
+                                    data-testid="link-social-linkedin">
                                     <i data-lucide="linkedin"></i>
                                     LinkedIn
                                 </a>
-                                <a href="https://github.com/alexsilva" class="social-link" data-testid="link-social-github">
+                                <a href="https://github.com/MuliroGab" class="social-link"
+                                    data-testid="link-social-github">
                                     <i data-lucide="github"></i>
                                     GitHub
                                 </a>
-                                <a href="mailto:alex.silva@example.com" class="social-link" data-testid="link-social-email">
+                                <a href="mailto:murillogabrielevil@hotmail.com" class="social-link"
+                                    data-testid="link-social-email">
                                     <i data-lucide="mail"></i>
                                     Email
                                 </a>
@@ -676,7 +527,7 @@
                                 <span class="status-text">Disponível para novos projetos</span>
                             </div>
                             <p class="availability-description">
-                                Atualmente estou aceitando novas oportunidades freelance e posições em tempo integral. 
+                                Atualmente estou aceitando novas oportunidades freelance e estágio.
                                 Fique à vontade para entrar em contato para discutir as necessidades do seu projeto.
                             </p>
                         </div>
@@ -691,13 +542,9 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-text">
-                    © 2024 Alex Silva. Desenvolvido com HTML, CSS e JavaScript.
+                    © 2025 Murillo Silva. Desenvolvido com HTML, CSS e JavaScript.
                 </p>
-                <button 
-                    class="back-to-top" 
-                    onclick="scrollToTop()"
-                    data-testid="button-back-to-top"
-                >
+                <button class="back-to-top" onclick="scrollToTop()" data-testid="button-back-to-top">
                     Voltar ao Topo
                 </button>
             </div>
@@ -709,4 +556,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -200,13 +200,13 @@ function handleContactClick(type) {
     
     switch (type) {
         case 'email':
-            window.location.href = 'mailto:alex.silva@example.com';
+            window.location.href = 'mailto:murillogabrielevil@hotmail.com';
             break;
         case 'linkedin':
-            window.open('https://linkedin.com/in/alexsilva', '_blank');
+            window.open('https://br.linkedin.com/in/murillo-silva-522873276', '_blank');
             break;
         case 'github':
-            window.open('https://github.com/alexsilva', '_blank');
+            window.open('https://github.com/MuliroGab', '_blank');
             break;
         case 'resume':
             console.log('Download currículo clicked');

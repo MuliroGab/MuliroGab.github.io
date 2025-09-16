@@ -22,6 +22,7 @@ html {
     --card: hsl(0, 0%, 100%);
     --card-foreground: hsl(220, 15%, 15%);
     --primary: hsl(210, 100%, 55%);
+    --primary2: hsl(210, 100%, 65%);
     --primary-foreground: hsl(0, 0%, 98%);
     --secondary: hsl(220, 5%, 92%);
     --secondary-foreground: hsl(220, 15%, 15%);
@@ -70,6 +71,7 @@ html {
     --card: hsl(220, 15%, 12%);
     --card-foreground: hsl(210, 15%, 85%);
     --primary: hsl(210, 100%, 55%);
+    --primary2: hsl(210, 100%, 65%);
     --primary-foreground: hsl(220, 15%, 8%);
     --secondary: hsl(220, 15%, 16%);
     --secondary-foreground: hsl(210, 15%, 85%);
@@ -97,8 +99,8 @@ body {
     font-family: var(--font-sans);
     font-weight: 400;
     line-height: 1.6;
-    color: hsl(var(--foreground));
-    background-color: hsl(var(--background));
+    color: var(--foreground);
+    background-color: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -121,13 +123,13 @@ p {
 }
 
 a {
-    color: hsl(var(--primary));
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: hsl(var(--primary) / 0.8);
+    color: var(--primary) / 0.8;
 }
 
 /* Layout Utilities */
@@ -144,9 +146,24 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 50;
-    background-color: hsl(var(--background) / 0.95);
+    background-color: var(--background) / 0.95;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid hsl(var(--border));
+    border-bottom: 1px solid var(--border);
+}
+
+
+.theme-icon-light,
+.theme-icon-dark {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: opacity 0.2s ease, color 0.2s ease, fill 0.2s ease;
+    color: var(--foreground);
+    fill: currentColor; 
+}
+
+.dark .theme-icon-dark {
+    opacity: 1;
+    color: #fff;
 }
 
 .nav {
@@ -162,7 +179,7 @@ a:hover {
 .nav-brand {
     font-size: 1.125rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .nav-menu {
@@ -171,7 +188,7 @@ a:hover {
 }
 
 .nav-link {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-weight: 500;
     transition: color 0.2s ease;
     padding: var(--spacing-sm);
@@ -180,8 +197,8 @@ a:hover {
 
 .nav-link:hover,
 .nav-link.active {
-    color: hsl(var(--foreground));
-    background-color: hsl(var(--accent));
+    color: var(--foreground);
+    background-color: var(--accent);
 }
 
 .nav-actions {
@@ -205,7 +222,7 @@ a:hover {
 }
 
 .theme-toggle:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 .theme-icon-light,
@@ -242,7 +259,7 @@ a:hover {
 }
 
 .mobile-menu-toggle:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 /* Hero Section */
@@ -266,7 +283,7 @@ a:hover {
     height: 12rem;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid hsl(var(--border));
+    border: 4px solid var(--border);
     box-shadow: var(--shadow-lg);
     position: relative;
 }
@@ -275,7 +292,7 @@ a:hover {
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background: linear-gradient(to top, hsl(var(--primary) / 0.1), transparent);
+    background: linear-gradient(to top, var(--primary) / 0.1, transparent);
 }
 
 .hero-content {
@@ -289,7 +306,7 @@ a:hover {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--primary)));
+    background: linear-gradient(135deg, var(--foreground), var(--primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -297,13 +314,13 @@ a:hover {
 
 .hero-subtitle {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-bottom: var(--spacing-lg);
 }
 
 .hero-description {
     font-size: 1.125rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     line-height: 1.7;
     max-width: 40rem;
     margin: 0 auto;
@@ -315,7 +332,7 @@ a:hover {
 
 .tech-label {
     font-size: 0.875rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-bottom: var(--spacing-md);
 }
 
@@ -354,7 +371,7 @@ a:hover {
 
 .section-description {
     font-size: 1.125rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     max-width: 40rem;
     margin: 0 auto;
 }
@@ -376,7 +393,7 @@ a:hover {
 .about-philosophy h3,
 .about-approach h3 {
     margin-bottom: var(--spacing-md);
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .approach-list {
@@ -388,14 +405,14 @@ a:hover {
     position: relative;
     padding-left: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
 }
 
 .approach-list li:before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: hsl(var(--primary));
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -408,8 +425,8 @@ a:hover {
 .stat-card {
     text-align: center;
     padding: var(--spacing-lg);
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
 }
@@ -417,13 +434,13 @@ a:hover {
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: hsl(var(--primary));
+    color: var(--primary);
     display: block;
 }
 
 .stat-label {
     font-size: 0.875rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-top: var(--spacing-sm);
 }
 
@@ -435,8 +452,8 @@ a:hover {
 }
 
 .project-card {
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-sm);
@@ -463,8 +480,8 @@ a:hover {
 
 .project-status {
     padding: var(--spacing-xs) var(--spacing-sm);
-    background-color: hsl(var(--success) / 0.1);
-    color: hsl(var(--success));
+    background-color: var(--success) / 0.1;
+    color: var(--success);
     border-radius: calc(var(--radius) / 2);
     font-size: 0.75rem;
     font-weight: 500;
@@ -472,7 +489,7 @@ a:hover {
 }
 
 .project-description {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-bottom: var(--spacing-lg);
     line-height: 1.6;
 }
@@ -486,8 +503,8 @@ a:hover {
 
 .tech-tag {
     padding: var(--spacing-xs) var(--spacing-sm);
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--secondary-foreground));
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
     border-radius: calc(var(--radius) / 2);
     font-size: 0.75rem;
     font-weight: 500;
@@ -506,8 +523,8 @@ a:hover {
 }
 
 .skill-category {
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-sm);
@@ -522,12 +539,12 @@ a:hover {
 .skill-icon {
     width: 3rem;
     height: 3rem;
-    background-color: hsl(var(--primary) / 0.1);
+    background-color: var(--primary) / 0.1;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: hsl(var(--primary));
+    color: var(--primary);
     flex-shrink: 0;
 }
 
@@ -538,7 +555,7 @@ a:hover {
 }
 
 .skill-description {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
     line-height: 1.5;
 }
@@ -558,7 +575,7 @@ a:hover {
 }
 
 .skill-item:hover {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 .skill-name {
@@ -573,23 +590,23 @@ a:hover {
 }
 
 .skill-level.specialist {
-    background-color: hsl(var(--primary) / 0.1);
-    color: hsl(var(--primary));
+    background-color: var(--primary) / 0.1;
+    color: var(--primary);
 }
 
 .skill-level.advanced {
-    background-color: hsl(var(--success) / 0.1);
-    color: hsl(var(--success));
+    background-color: var(--success) / 0.1;
+    color: var(--success);
 }
 
 .skill-level.intermediate {
-    background-color: hsl(var(--warning) / 0.1);
-    color: hsl(var(--warning));
+    background-color: var(--warning) / 0.1;
+    color: var(--warning);
 }
 
 .skill-level.beginner {
-    background-color: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
+    background-color: var(--muted);
+    color: var(--muted-foreground);
 }
 
 /* Contact Section */
@@ -621,12 +638,12 @@ a:hover {
 .contact-icon {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: hsl(var(--primary) / 0.1);
+    background-color: var(--primary) / 0.1;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: hsl(var(--primary));
+    color: var(--primary);
 }
 
 .contact-details {
@@ -636,12 +653,12 @@ a:hover {
 
 .contact-label {
     font-size: 0.875rem;
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     margin-bottom: var(--spacing-xs);
 }
 
 .contact-value {
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     font-weight: 500;
 }
 
@@ -657,12 +674,12 @@ a:hover {
     padding: var(--spacing-sm);
     border-radius: var(--radius);
     transition: background-color 0.2s ease;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .social-link:hover {
-    background-color: hsl(var(--accent));
-    color: hsl(var(--primary));
+    background-color: var(--accent);
+    color: var(--primary);
 }
 
 .availability-status {
@@ -679,24 +696,24 @@ a:hover {
 }
 
 .status-indicator.available {
-    background-color: hsl(var(--success));
+    background-color: var(--success);
 }
 
 .status-text {
     font-weight: 500;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .availability-description {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
     line-height: 1.6;
 }
 
 /* Components */
 .card {
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
 }
@@ -736,32 +753,33 @@ a:hover {
 }
 
 .btn:disabled {
-    opacity: 0.5;
+    opacity: 0.9;
     cursor: not-allowed;
 }
 
 .btn-primary {
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
 }
 
-.btn-primary:hover:not(:disabled) {
-    background-color: hsl(var(--primary) / 0.9);
+.btn-primary:hover {
+    background-color: var(--primary2);
 }
+
 
 .btn-outline {
-    border-color: hsl(var(--border));
+    border-color: var(--border);
     background-color: transparent;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .btn-outline:hover:not(:disabled) {
-    background-color: hsl(var(--accent));
+    background-color: var(--accent);
 }
 
 .btn-disabled {
-    background-color: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
+    background-color: var(--muted);
+    color: var(--muted-foreground);
     cursor: not-allowed;
 }
 
@@ -776,8 +794,8 @@ a:hover {
     display: inline-flex;
     align-items: center;
     padding: var(--spacing-xs) var(--spacing-sm);
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--secondary-foreground));
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
     border-radius: calc(var(--radius) / 2);
     font-size: 0.75rem;
     font-weight: 500;
@@ -804,16 +822,16 @@ a:hover {
 .form-group label {
     font-size: 0.875rem;
     font-weight: 500;
-    color: hsl(var(--foreground));
+    color: var(--foreground);
 }
 
 .form-group input,
 .form-group textarea {
     padding: var(--spacing-sm) var(--spacing-md);
-    border: 1px solid hsl(var(--border));
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     font-size: 0.875rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -821,8 +839,8 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: hsl(var(--ring));
-    box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px var(--ring) / 0.2;
 }
 
 .form-group textarea {
@@ -832,9 +850,9 @@ a:hover {
 
 /* Footer */
 .footer {
-    border-top: 1px solid hsl(var(--border));
+    border-top: 1px solid var(--border);
     padding: var(--spacing-xl) 0;
-    background-color: hsl(var(--muted) / 0.5);
+    background-color: var(--muted) / 0.5;
 }
 
 .footer-content {
@@ -846,12 +864,12 @@ a:hover {
 }
 
 .footer-text {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
 }
 
 .back-to-top {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     background: none;
     border: none;
     cursor: pointer;
@@ -862,8 +880,8 @@ a:hover {
 }
 
 .back-to-top:hover {
-    color: hsl(var(--foreground));
-    background-color: hsl(var(--accent));
+    color: var(--foreground);
+    background-color: var(--accent);
 }
 
 /* Toast System */
@@ -879,8 +897,8 @@ a:hover {
 }
 
 .toast {
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: var(--spacing-md);
     box-shadow: var(--shadow-lg);
@@ -900,16 +918,16 @@ a:hover {
 }
 
 .toast-description {
-    color: hsl(var(--muted-foreground));
+    color: var(--muted-foreground);
     font-size: 0.875rem;
 }
 
 .toast.success {
-    border-left: 4px solid hsl(var(--success));
+    border-left: 4px solid var(--success);
 }
 
 .toast.error {
-    border-left: 4px solid hsl(var(--destructive));
+    border-left: 4px solid var(--destructive);
 }
 
 /* Loading States */
@@ -966,8 +984,8 @@ a:hover {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: hsl(var(--background));
-        border-top: 1px solid hsl(var(--border));
+        background-color: var(--background);
+        border-top: 1px solid var(--border);
         flex-direction: column;
         padding: var(--spacing-md);
         gap: var(--spacing-sm);
@@ -1043,7 +1061,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 a:focus-visible {
-    outline: 2px solid hsl(var(--ring));
+    outline: 2px solid var(--ring);
     outline-offset: 2px;
 }
 
